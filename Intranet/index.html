@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- Menú Principal -->
+     <div class="menu">
+        <h2>Menú Principal</h2>
+        <ul id="mainMenu">
+            <li><button onclick="showSubmenu('adminMenu')">Administrador</button></li>
+            <li><button onclick="showSubmenu('employeeMenu')">Empleado</button></li>
+            <li><button onclick="exit()">Salir</button></li>
+        </ul>
+
+        <!-- Submenú Administrador -->
+        <ul id="adminMenu" class="submenu" style="display: none;">
+            <li><button onclick="action('Ingresar Empleado')">Ingresar Empleado</button></li>
+            <li><button onclick="action('Ingresar Fecha de Inicio')">Ingresar Fecha de Inicio</button></li>
+            <li><button onclick="action('Ingresar Fecha Inicio Vacaciones')">Ingresar Fecha Inicio Vacaciones</button></li>
+            <li><button onclick="showMainMenu()">Volver</button></li>
+        </ul>
+
+        <!-- Submenú Empleado -->
+        <ul id="employeeMenu" class="submenu" style="display: none;">
+            <li><button onclick="action('Consultar Certificado Laboral')">Consultar Certificado Laboral</button></li>
+            <li><button onclick="action('Consultar Periodo de Vacaciones')">Consultar Periodo de Vacaciones</button></li>
+            <li><button onclick="action('Consultar Datos Personales')">Consultar Datos Personales</button></li>
+            <li><button onclick="showMainMenu()">Volver</button></li>
+        </ul>
+    </div>
+
+    <script>
+        function showSubmenu(menuId) {
+            document.getElementById('mainMenu').style.display = 'none';
+            document.getElementById(menuId).style.display = 'block';
+        }
+
+        function showMainMenu() {
+            document.getElementById('adminMenu').style.display = 'none';
+            document.getElementById('employeeMenu').style.display = 'none';
+            document.getElementById('mainMenu').style.display = 'block';
+        }
+
+        function action(actionName) {
+            alert('Acción seleccionada: ' + actionName);
+        }
+
+        function exit() {
+            alert('Saliendo del sistema');
+        }
+    </script>
+    
+    <div class="v2_2"><span class="v2_3">Alicunde</span>
+        <div class="name"></div>
+        <div class="v2_5">
+            <div class="v2_6">
+                <div class="v2_7">
+                    <div class="v2_8">
+                        <div class="v2_9"></div>
+                        <div class="v2_10">
+                            <div class="v2_11">
+                                <div class="v2_12"></div>
+                            </div>
+                        </div>
+                        <div class="v2_13">
+                            <div class="v2_14">
+                                <div class="v2_15"></div>
+                            </div>
+                        </div><span class="v2_16"> <a href="https://sites.google.com/alicunde.com/onboardingalicunde/inicio">ONBOARDING</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="v2_17">
+                <div class="v2_18"></div><span class="v2_19"> <a href="https://sites.google.com/alicunde.com/procedimientos-generales/inicio">PORTAL
+                    GENERAL</a></span>
+            </div>
+            <div class="v2_20">
+                <div class="v2_21"></div><span class="v2_22"> <a href="https://sites.google.com/alicunde.com/portal-produccion/inicio">PORTAL DE
+                    PRODUCCIÓN</a></span>
+            </div>
+        </div>
+        <div class="v2_26"></div>
+        <div class="v2_30"></div><span class="v2_31">Quiénes somos</span>
+        <div class="v2_43"></div>
+        <span class="v25_6">Políticas y normas generales</span>
+            <span class="v2_34">Ingresa aquí y conoce nuestra historia, valores visión y misión.</span>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="v2_40"></div><span class="v2_42">Nuestra dedicación a seguir las mejores prácticas y estándares
+            elevados se refleja en nuestras políticas y normas internas. Te invitamos a familiazarte con ellas.</span>
+        <div class="v2_43"></div><span class="v1_3"> 
+            <h1>¡Bienvenid@ a Alicunde Systems!</h1>
+
+           <p>Estamos felices de que formes parte de nuestra vibrante comunidad en línea, donde la innovación y la
+            colaboración son el motor que impulsa nuestro éxito. Estamos encantados de darte la bienvenida a nuestra
+            intranet, un espacio digital donde el talento se encuentra y las ideas cobran vida.</p> 
+
+            <p>En este emocionante viaje hacia la excelencia tecnológica, cada uno de nosotros desempeña un papel
+                fundamental. Aprovecha al máximo esta plataforma para conectar, compartir conocimientos y contribuir al
+                crecimiento de nuestra empresa.</p>
+
+            <p>Juntos, podemos alcanzar nuevas alturas y superar cualquier desafío que se nos presente.</p>
+
+        </span>
+        <div class="v23_6"></div>
+        <div class="v23_7"></div>
+        <div class="v23_9"></div>
+        <div class="v23_11"></div>
+        <div class="v23_12"></div>
+        <div class="v23_10"></div><span class="v23_13"> HelpDesk</span><span class="v23_14"> Estructura</span><span
+            class="v23_15">Directorio</span><span class="v23_16"> Vacaciones </span><span class="v25_5"> Bienestar
+        </span><span class="v23_17">Fechas Especiales</span>
+        <div class="v50_47">
+            <div class="v30_4">
+                <div class="v30_2"></div>
+                <div class="v44_104"></div>
+                <div class="v44_103"></div>
+                <div class="v44_102"></div>
+                <div class="v44_101"></div>
+                <div class="v44_100"></div>
+                                  <span class="v25_28">Facundo Millán
+                    Mayo 22</span><span class="v25_29">Ángel Sánchez
+                    Mayo 23</span><span class="v25_30">David Santullo
+                    Mayo 30</span><span class="v25_27">Sergio García
+                    Mayo 13</span><span class="v25_26">Juliana Marín
+                    Mayo 10</span>
+                <div class="v30_3"><span class="v25_12">Cumpleaños</span>
+                    <div class="v25_13"></div>
+                    <div class="v20_4"></div><span class="v25_23">Juan Pérez
+                        Mayo 3</span><span class="v44_28">Juan Pérez
+                        Mayo 3</span><span class="v25_24">María Solís
+                        Mayo 8</span>
+                    <div class="v44_98"></div>
+                    <div class="v44_99"></div>
+                </div>
+            </div>
+            <div class="v30_5"></div><span class="v30_8">Novedades</span>
+            <div class="v30_10"></div>
+            <div class="v44_88"></div>
+            <div class="v30_17"></div>
+            <div class="v44_26"></div>
+            <div class="v30_18"></div>
+            <div class="v44_27"></div>
+            <!--<div class="v30_13"></div>-->
+            <!--<div class="v30_12"></div>-->
+            <div class="v32_2"></div>
+            <div class="v32_4"></div><span class="v44_29">Ángela Flórez
+                IT Talent Acquisition
+            </span><span class="v44_30">Iñaki Gómez
+                Software Developer</span><span class="v44_31">Les compartimos la bienvenida a Antonio Saenz al equipo de
+                Madrid, como nuestro nuevo Project manager. 🔝
+                Estamos emocionados de tenerte con nosotros y confiamos en que tu experiencia y habilidades serán de
+                gran valor para el éxito de nuestros proyectos. Esperamos trabajar juntos y alcanzar nuestros objetivos
+                de manera colaborativa. ¡Bienvenido! 🎉</span><span class="v44_32">En nuestra empresa, no solo
+                trabajamos en equipo para crear las mejores soluciones en software, también nos aseguramos de crear un
+                ambiente de trabajo agradable y divertido. Nuestras instalaciones cuentan con un espacio para que
+                nuestros desarrolladores puedan relajarse y divertirse jugando ping-pong, dardos y compartiendo un café
+                en compañía de sus compañeros. Porque creemos que un equipo feliz es un equipo productivo. ¡Únete a
+                nosotros y vive la experiencia! #EquipoFeliz #Innovación #EspírituDeEquipo #SoftwareDevelopment
+                🏓🎯☕️👩‍💻👨‍💻</span>
+            <div class="v44_90"></div>
+        </div>
+        <div class="v44_105">
+            <div class="v44_106"></div><span class="v44_107">Correo: info@alicunde.com</span><span
+                class="v44_108">LinkedIn</span><span class="v44_109">Instagram</span><span class="v44_110">Contacto: +34
+                915 93 60 09</span>
+            <div class="v44_111">
+                <div class="v44_112"></div>
+                <div class="v44_113"></div>
+                <div class="v44_114"></div>
+            </div>
+            <div class="v44_115"></div>
+        </div>
+    </div>
+</body>
+
+</html>
